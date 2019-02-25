@@ -26,6 +26,13 @@ spark
 ### crawler  
 - 네이버, 카카오, 팍스넷 종목 게시판 크롤러
 ### file_list	  
-share
+### share
 - 형태소 분석(<a href="https://github.com/kakao/khaiii"> Khaiii </a>)
+> 관련 폴더 
+> - 코드 :  naver_kai_code
+> - 데이터 폴더 : token kai_result
+- spark_code(spark)
+> 형태소 column 테이블 제작
+
+
 
