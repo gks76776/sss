@@ -1,0 +1,25 @@
+#xrdp
+docker run --name xrdp -v /c/share:/home/share --hostname terminalserver --shm-size 1g -p 4040:4040 -p 3389:3389 -p 2222:22 -p 8088:8088 -p 5000:5000 -p 4444:4444 -p 2020:2020 -p 2022:2022 -p 2220:2220 -p 4004:4004 -p 1055:1055 -p 2666:2666 tinywolf/xubuntu-xrdp:v2.2kr-njm
+
+docker run -d --name xrdp -v /o/share:/home/share --hostname terminalserver --shm-size 1g -p 4040:4040 -p 3389:3389 -p 2222:22 -p 8088:8088 -p 5000:5000 -p 4444:4444 -p 2020:2020 -p 2022:2022 -p 2220:2220 -p 4004:4004 -p 1055:1055 -p 2666:2666 tinywolf/xubuntu-xrdp:v2.2kr-njm
+docker run -d --name xrdp2 -v /o/share:/home/share --hostname terminalserver --shm-size 1g -p 4040:4040 -p 3389:3389 -p 2222:22 -p 8088:8088 -p 5000:5000 -p 4444:4444 -p 2020:2020 -p 2022:2022 -p 2220:2220 -p 4004:4004 -p 1055:1055 -p 2666:2666 --net=bridge tinywolf/xubuntu-xrdp:v2.2kr-njm
+docker exec -ti xrdp adduser admin
+
+
+#kai
+docker run -it -P -p 8888:8888 --name test -v /c/share:/home/share wjdrbaus12/khaiii:0.13
+docker inspect
+
+docker 아이피 고정 
+
+docker network create --subnet=172.17.0.3 ok
+docker run --net ok --ip 172.17.0.2 -it ubuntu bash
+
+여기 ip 주소
+192.168.0.150
+노트북 아이피 주소
+192.168.0.163
+
+docker pull tinywolf/xubuntu-xrdp:v2.2kr-njm
+
+pip3 install https://dist.apache.org/repos/dist/dev/incubator/toree/0.2.0/snapshots/dev1/toree-pip/toree-0.2.0.dev1.tar.gz
