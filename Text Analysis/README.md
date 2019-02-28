@@ -1,4 +1,4 @@
-# Sentimental Stock Solution
+# Sentimental Stock Solution-Text Analysis
 ## 1. 배경 및 목적
 - 주가 예측의 정성적 자료로 뉴스를 많이 이용하고 있다.
 - 반면에, 주가 커뮤니티는 많이 연구 되지 않았고, 그렇기에 주가 커뮤니티들의 감성을 주가 등락 예측에 반영하고자 하였다.
