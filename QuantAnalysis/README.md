@@ -9,7 +9,6 @@
 anaconda3  
 numpy  
 pandas  
-selenium  
 seaborn  
 matplotlib  
 sklearn
